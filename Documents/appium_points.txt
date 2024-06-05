@@ -1,0 +1,52 @@
+445671:36 PM 12/10/2023SDK Location  -->C:\Users\user\AppData\Local\Android\Sdk  ---> anrdoid _home   -->system veribale
+
+platform -tool -->C:\Users\user\AppData\Local\Android\Sdk\platform-tools
+
+platform -->C:\Users\user\AppData\Local\Android\Sdk\platforms
+
+platform-android34 -->C:\Users\user\AppData\Local\Android\Sdk\platforms\android-34
+
+
+
+How to run device
+
+go to cmd
+1> adb devices
+2> cd (sdk path) C:\Users\user\AppData\Local\Android\Sdk
+3>cd emulator
+4>emulator -avd Thanu
+
+another way
+
+1> go to cmd
+2>cd C:\Users\user\AppData\Local\Android\Sdk\emulator
+3>emulator -avd Thanu
+
+
+if adb is not connected to device use cmd in cmd prompt
+adb kill-server
+adb start-server
+
+if we are testing android app the extension will be .apk and for ios .ipa or .app
+
+if app is not getting install 
+copy file name 
+go to emulator file path C:\Users\user\AppData\Local\Android\Sdk\emulator paste the apk file here
+through that emulator path navigate cmd promt and enter below cmd
+C:\Users\user\AppData\Local\Android\Sdk\emulator>adb install General-Store.apk
+
+package name
+Name: Calculator
+Package: com.android.calculator2
+Signature: f3:8a:b5:f3:f8:93:8c:5c:8c:84:79:4e:64:3d:e8:93:fd:c4:1b:18
+Version name: 8.0.0
+ Version Code: 26
+
+activity name
+1) com.android.calculator2.Calculator
+
+emulator file
+>cd C:\Users\user\AppData\Local\Android\Sdk\emulator
+3>emulator -avd (device name)Thanu
+save file with .bat extension
+
